@@ -9,6 +9,10 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route('/chatbot')
+def chatbot():
+    return render_template('chatbot.html')
+
 @app.route('/predict',methods=['POST'])
 def predict():
     if request.method == 'POST':
@@ -19,5 +23,5 @@ def predict():
         return render_template('result.html',prediction=my_predict)
 
 
-if __name__ == '__main__':
+if __name__ == '_main_':
     app.run(host='0.0.0.0',port=5000)

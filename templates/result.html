@@ -64,6 +64,31 @@
             height: 100%;
             border: none;
         }
+        .chat-card {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .chat-card p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .chat-card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .chat-card button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 
@@ -179,21 +204,25 @@
             </div>
             {% endif %}
         </div>
-         <div class="iframe-container">
-        <div class="heading-container">
+        <div class="chat-card">
+            <p>If you're feeling lonely or depressed, we're here to listen. Don't hesitate to reach out and chat with us.</p>
+            <a href="chatbot" class="button">Start Chat</a>
+        </div>
+         <!-- <div class="iframe-container"> -->
+        <!-- <div class="heading-container">
             <div class="main-heading" style="font-family: cursive;">Chat With Us</div>
             <div class="sub-heading"><em>Developed by Mohd Zaid Rashid</em></div>
         </div>
         <div class="iframe-wrapper">
             <iframe id="frame" class="b_frame" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/710c1a23-eda6-436b-9c3c-9e7408328b4b"></iframe>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
     </div>
     <footer class="page-footer">
         <div class="container">
             <div class="social-wrapper">
             <p>
-                Copyright 2024 : Made with ❤️ by
+                Copyright 2024 : Made with ❤ by
                 <a>Mohd Zaid Rashid</a>
             </p>
         </div>
